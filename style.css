@@ -1,0 +1,56 @@
+/*
+Colors used:
+Background Color (WHite): #FFFFFF;
+Secondary Color (Cream): #FFF1BF;
+Font Color (Brown): #B38B00;
+Button Color (Orange): #FFA500;
+*/
+<head>
+<link rel="stylesheet" type="text/css" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+body {
+  background-color: #ffffff;
+  font-family: 'encode+sans', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6 /* Sets the line-height to 1.6 * the font-size */
+  color: #B38B00
+}
+h1, h2, h3, h4 {
+  line-height: 1.4
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+img {
+  width: 100%;
+}
+a {
+  color: #FFFFFF;
+  text-decoration: none; /* No underlining*/
+}
+a:hover,
+a:focus {
+  color: #FFA500;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:visited { /* visited link */
+  color: #FFFFFF;
+}
+a:active { /* selected link */
+  color: #FFA500
+}
