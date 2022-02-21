@@ -43,14 +43,42 @@ a {
   color: #FFFFFF;
   text-decoration: none; /* No underlining*/
 }
+a:visited { /* visited link */
+  color: #FFFFFF;
+}
 a:hover,
 a:focus {
   color: #FFA500;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
-a:visited { /* visited link */
-  color: #FFFFFF;
-}
 a:active { /* selected link */
   color: #FFA500
+}
+.button {
+  display: inline-block;
+  background-color: #FFA500;
+  color: #FFFFFF;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994C30;
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+.button.contact {
+  background-color: transparent;
+  color: #FFA500
+  text-transform: uppercase;
+  border: 2px solid #FFA500;
+}
+.button.contact:hover {
+  background-color: #FFA500;
+  color: #FFFFFF
+}
+.button.contact:active {
+  background-color: #FFA500;
+  color: #FFFFFF;
 }
