@@ -44,11 +44,11 @@ a:visited { /* visited link */
 }
 a:hover,
 a:focus {
-  color: #FFFFFF;
+  color: #FFA500;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
-  color: #FFFFFF;
+  color: #FFA500;
 }
 .button {
   display: inline-block;
