@@ -44,15 +44,15 @@ a:visited { /* visited link */
 }
 a:hover,
 a:focus {
-  color: #FFA500;
+  color: #FFFFFF;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
-  color: #FFA500;
+  color: #FFFFFF;
 }
 .button {
   display: inline-block;
-  background-color: #B38B00;
+  background-color: #FFA500;
   color: #FFFFFF;
   font-weight: 400;
   padding: 10px;
@@ -71,8 +71,8 @@ a:active { /* selected link */
   border: 2px solid #FFA500;
 }
 .button.contact:hover {
-  background-color: #FFA500;
-  color: #FFFFFF;
+  background-color: #FFFFFF;
+  color: #FFA500;
 }
 .button.contact:active {
   background-color: #FFA500;
