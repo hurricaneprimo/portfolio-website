@@ -5,6 +5,9 @@ Secondary Color (Cream): #FFF1BF;
 Font Color (Brown): #B38B00;
 Button Color (Orange): #FFA500;
 */
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #ffffff;
   font-family: 'encode sans', sans-serif;
@@ -57,24 +60,40 @@ a:active { /* selected link */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994C30;
+  border: 2px solid #B38B00;
   transition: 0.2s opacity;
 }
 .button:hover {
   opacity: 0.8;
+  background-color: #FFFFFF;
+  color: #FFA500;
   text-decoration: none;
+  border: 2px solid #B38B00;
 }
 .button.contact {
   background-color: transparent;
   color: #FFA500;
   text-transform: uppercase;
-  border: 2px solid #FFA500;
+  border: 2px solid #B38B00;
 }
 .button.contact:hover {
-  background-color: #FFFFFF;
-  color: #FFA500;
+  background-color: #FFA500;
+  color: #FFFFFF;
+  border: 2px solid #B38B00;
 }
 .button.contact:active {
   background-color: #FFA500;
   color: #FFFFFF;
+}
+header {
+  background-color: #FFF1BF;
+  padding: 10px;
+  margin: 10px;
+  border-top: 3px solid #FFA500;
+  border-right: 3px solid #FFA500;
+  border-bottom: 3px solid #FFA500;
+  border-left: 3px solid #FFA500;
+}
+.container {
+  padding: 15px;
 }
