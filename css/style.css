@@ -11,7 +11,7 @@ Button Color (Orange): #FFA500;
 body {
   background-color: #ffffff;
   font-family: 'encode sans', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
+  font-size: 18px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #B38B00;
@@ -87,8 +87,8 @@ a:active { /* selected link */
 }
 header {
   background-color: #FFFFFF;
-  padding: 10px;
-  text-align: center;
+  padding: 99px;
+  text-align: unset;
   margin: 10px;
   border-top: 3px solid #FFA500;
   border-right: 3px solid #FFA500;
@@ -115,6 +115,11 @@ header {
   max-width: 250px;
   text-align: center;
 }
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+}
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -134,7 +139,42 @@ nav > ul > li > a {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
-main {
-  padding-top: 133px;
+#hero span {
+  display: block;
+}
+@media only screen and (min-width: 640px) {  /* Medium devices (640px and larger) */
+}
+@media only screen and (min-width: 1024px) { /* Large devices (1024px and larger) */
+}
+@media only screen and (min-width: 1440px) { /* X-large devices (1440px or larger) */
+}
+@media only screen and (min-width: 1920px) { /* Extra-large devices (1920px or larger) */
+}
+.col-md-6 {
+  width: 50%;
+}
+.col-lg-7 {
+  width: 50%;
+}
+.col-xl-4 {
+  width: 50%;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#about-page h3 {
+  margin-top: 0;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
