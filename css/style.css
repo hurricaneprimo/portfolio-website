@@ -37,6 +37,8 @@ h4 {
 }
 img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 a {
   color: #B38B00;
@@ -58,9 +60,12 @@ a:active { /* selected link */
   background-color: #FFA500;
   color: #FFFFFF;
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border: 2px solid #B38B00;
+  transition-duration: 0.2s;
+  transition-property: opacity;
   transition: 0.2s opacity;
 }
 .button:hover {
@@ -145,22 +150,23 @@ nav > ul > li > a {
   display: block;
 }
 @media only screen and (min-width: 640px) {  /* Medium devices (640px and larger) */
+  .col-md-6 {
+    width: 50%;
+  }
 }
 @media only screen and (min-width: 1024px) { /* Large devices (1024px and larger) */
+  .col-lg-7 {
+    width: 60%;
+  }
+  .col-lg-5 {
+    width: 40%;
+  }
 }
 @media only screen and (min-width: 1440px) { /* X-large devices (1440px or larger) */
 }
 @media only screen and (min-width: 1920px) { /* Extra-large devices (1920px or larger) */
 }
-.col-md-6 {
-  width: 50%;
-}
-.col-lg-7 {
-  width: 50%;
-}
-.col-xl-4 {
-  width: 50%;
-}
+
 [class*="col-"] {
   float: left;
   padding: 10px;
@@ -177,4 +183,37 @@ nav > ul > li > a {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px,48px);}
+}
+.cloud-back {
+  animation-duration: 40s;
+  animation-name: cloud-move-reverse;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
