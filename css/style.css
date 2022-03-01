@@ -92,7 +92,7 @@ a:active { /* selected link */
 }
 header {
   background-color: #FFFFFF;
-  padding: 99px;
+  padding: 60px;
   text-align: unset;
   margin: 10px;
   border-top: 3px solid #FFA500;
@@ -216,4 +216,6 @@ nav > ul > li > a {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
+}
+#logo {width: 150px;
 }
