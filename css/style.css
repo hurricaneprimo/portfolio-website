@@ -94,7 +94,8 @@ header {
   background-color: #FFFFFF;
   padding: 10px 0 4px;
   text-align: unset;
-  margin: 10px;
+  position: fixed;
+  width: 100%;
 }
 main {
   padding-top: 56px;
@@ -158,11 +159,22 @@ nav > ul > li > a {
 #hero span {
   display: block;
 }
+#about-picture {
+  width: 100%;
+}
+#social-media-icons svg {
+  height: 40px;
+  width: 40px;
+}
+#social-media-icons {
+  text-align: center;
+}
 @media only screen and (min-width: 641px) {  /* Medium devices (640px and larger) */
   .col-md-6 {
     display: inline-block;
     width: 50%;
     margin: 1em 0;
+    header {position: initial; }
   }
   .navtoggle li:not(:last-child) {
     display: inline-block;
