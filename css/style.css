@@ -92,13 +92,12 @@ a:active { /* selected link */
 }
 header {
   background-color: #FFFFFF;
-  padding: 60px;
+  padding: 10px 0 4px;
   text-align: unset;
   margin: 10px;
-  border-top: 3px solid #FFA500;
-  border-right: 3px solid #FFA500;
-  border-bottom: 3px solid #FFA500;
-  border-left: 3px solid #FFA500;
+}
+main {
+  padding-top: 56px;
 }
 .container {
   padding: 15px;
@@ -117,20 +116,16 @@ header {
   padding: 0.67em 0;
 }
 .logo {
-  max-width: 250px;
+  max-width: 150px;
+  min-width: 641px;
   text-align: center;
-}
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;
 }
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 nav > ul > li {
-  display: inline-block;
   padding: 0;
 }
 nav > ul > li > a {
@@ -138,6 +133,20 @@ nav > ul > li > a {
   text-transform: uppercase;
   font-weight: 700;
   color: #B38B00;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 #hero {
   background-color: #FFF1BF;
@@ -149,11 +158,20 @@ nav > ul > li > a {
 #hero span {
   display: block;
 }
-@media only screen and (min-width: 640px) {  /* Medium devices (640px and larger) */
+@media only screen and (min-width: 641px) {  /* Medium devices (640px and larger) */
   .col-md-6 {
+    display: inline-block;
     width: 50%;
+    margin: 1em 0;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
   }
 }
+
 @media only screen and (min-width: 1024px) { /* Large devices (1024px and larger) */
   .col-lg-7 {
     width: 60%;
@@ -166,7 +184,16 @@ nav > ul > li > a {
 }
 @media only screen and (min-width: 1920px) { /* Extra-large devices (1920px or larger) */
 }
-
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
 [class*="col-"] {
   float: left;
   padding: 10px;
