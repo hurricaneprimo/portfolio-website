@@ -11,10 +11,12 @@
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
       <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;500;700&display=swap" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
    <body>
       <header>
          <div class="container">
+           <div class="navtoggle" id="myNavtoggle">
             <picture>
                <source srcset="img/logo_markprimiano@1.png" media="(max-width:767px)">
                <img src="img/logo_markprimiano@2.png" alt="Mark Primiano Logo">
@@ -24,7 +26,8 @@
                <ul class="navigation">
                   <li><a href="index.html">Work</a></li>
                   <li><a href="about.html">About</a></li>
-                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#contact;" onclick="menuToggle()">Contact</a></li>
+                  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                </ul>
             </nav>
          </div>
@@ -748,7 +751,6 @@
             </a>
          </div>
       </footer>
-      <script src="js/scripts.js">
-        </script>
+      <script src="js/scripts.js"></script>
    </body>
 </html>
