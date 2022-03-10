@@ -14,22 +14,23 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
    <body>
-      <header>
-         <div>
+     <header>
+        <div class="container">
+          <div class="navtoggle" id="myNavtoggle">
            <picture>
               <source srcset="img/logo_markprimiano@1.png" media="(max-width:767px)">
-              <img src="img/logo_markprimiano@2.png" alt="Mark Primiano Logo">
+              <img src="img/logo_markprimiano@2.png" alt="Mark Primiano Logo" id="logo">
            </picture>
-            <nav>
-               <ul>
-                  <li><a href="index.html">Work</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="#contact;" onclick="menuToggle()">Contact</a></li>
-                  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-               </ul>
-            </nav>
-         </div>
-      </header>
+           <nav>
+              <ul class="navigation">
+                 <li><a href="index.html">Work</a></li>
+                 <li><a href="about.html">About</a></li>
+                 <li><a href="#contact;" onclick="menuToggle()">Contact</a></li>
+                 <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+              </ul>
+           </nav>
+        </div>
+     </header>
       <main>
         <div>
           <h1>WellnesT - Health Hub</h1>
@@ -125,7 +126,7 @@
             </p>
             <a href="mailto:office@careerfoundry.com" class="button contact">Email me</a>
          </div>
-         <div>
+         <div id="social-media-icons">
             <!-- Social Media Layout and Placeholders -->
             <a href="LINKEDIN-URL" target="_blank">
                <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
