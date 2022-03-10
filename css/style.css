@@ -174,7 +174,6 @@ nav > ul > li > a {
     display: inline-block;
     width: 50%;
     margin: 1em 0;
-    header {position: initial; }
   }
   .navtoggle li:not(:last-child) {
     display: inline-block;
@@ -182,6 +181,11 @@ nav > ul > li > a {
   .navtoggle li:last-child {
     display: none;
   }
+  header {
+    position: initial;
+    text-align: center;
+   }
+
 }
 
 @media only screen and (min-width: 1024px) { /* Large devices (1024px and larger) */
