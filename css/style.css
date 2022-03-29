@@ -2,7 +2,7 @@
 Colors used:
 Background Color (WHite): #FFFFFF;
 Secondary Color (Cream): #FFF1BF;
-Font Color (Brown): #B38B00;
+Font Color (Brown): #644E00;
 Button Color (Orange): #FFA500;
 */
 * {
@@ -14,7 +14,7 @@ body {
   font-size: 18px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #B38B00;
+  color: #644E00;
 }
 h1, h2, h3, h4 {
   line-height: 1.4;
@@ -41,11 +41,11 @@ img {
   height: auto;
 }
 a {
-  color: #B38B00;
+  color: #644E00;
   text-decoration: none; /* No underlining*/
 }
 a:visited { /* visited link */
-  color: #B38B00;
+  color: #644E00;
 }
 a:hover,
 a:focus {
@@ -63,7 +63,7 @@ a:active { /* selected link */
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border: 2px solid #B38B00;
+  border: 2px solid #644E00;
   transition-duration: 0.2s;
   transition-property: opacity;
   transition: 0.2s opacity;
@@ -73,18 +73,18 @@ a:active { /* selected link */
   background-color: #FFFFFF;
   color: #FFA500;
   text-decoration: none;
-  border: 2px solid #B38B00;
+  border: 2px solid #644E00;
 }
 .button.contact {
   background-color: transparent;
   color: #FFA500;
   text-transform: uppercase;
-  border: 2px solid #B38B00;
+  border: 2px solid #644E00;
 }
 .button.contact:hover {
   background-color: #FFA500;
   color: #FFFFFF;
-  border: 2px solid #B38B00;
+  border: 2px solid #644E00;
 }
 .button.contact:active {
   background-color: #FFA500;
@@ -133,7 +133,7 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #B38B00;
+  color: #644E00;
 }
 .navtoggle li:not(:last-child) {
   display: none;
